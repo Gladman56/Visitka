@@ -292,6 +292,34 @@ footer {
     .form form fieldset {
         width: 80%;
     }
+
+    .math form fieldset {
+        width: 70%;
+    }
+
+    .API .Saumal {
+        width: 100%;
+    }
+
+    .API .Petro {
+        width: 100%;
+    }
+
+    .API .Tucson {
+        width: 100%;
+    }
+
+    .API .Petro span {
+        font-size: 1.05rem;
+    }
+
+    .API .Tucson span {
+        font-size: 1.05rem;
+    }
+
+    .API .Saumal span {
+        font-size: 1.05rem;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
@@ -330,4 +358,151 @@ footer {
 
 .navbar ul .work:hover ul {
     display: flex; /* Show the dropdown on hover */
+}
+
+.math {
+    display: flex;
+}
+
+.math form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.math form fieldset {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.math form fieldset legend {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.math form fieldset .counters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.math form fieldset .counters div label, input {
+    margin: auto;
+    text-align: center;
+}
+
+.math form fieldset .counters div input {
+    width: 70%;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.math form fieldset .butcont {
+    display: flex;
+    flex: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.math form fieldset.butcont button {
+    display: block;
+    width: 20%;
+    box-sizing: border-box;
+    height: 40px;
+    margin: auto;
+}
+
+.math form fieldset p {
+    display: flex;
+    margin: 0;
+}
+
+.math form fieldset p span {
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.API {
+    display: flex;
+    flex-direction: column;
+}
+
+.API .Petro {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.API .Petro img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Saumal {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.API .Saumal img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Tucson {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.API .Tucson img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Petro img {
+    border-radius: 8px;
+}
+
+.API .Tucson img {
+    border-radius: 8px;
+}
+
+.API .Saumal img {
+    border-radius: 8px;
+}
+
+.API .Petro span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .Tucson span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .Saumal span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
 }
