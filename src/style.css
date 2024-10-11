@@ -429,6 +429,56 @@ footer {
     font-size: 1.2rem;
 }
 
+.math2 {
+    display : flex;
+}
+
+.math2 form {
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+    padding-top:20px;
+    width:100%;
+}
+
+.math2 form fieldset {
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+    width:50%;
+    margin-bottom:30px;
+}
+
+.math2 form fieldset legend {
+    text-align: center;
+    font-size:1.2rem;
+}
+
+.math2 form fieldset .buttan {
+    display: flex;
+    flex:row;
+    width:100%;
+    margin-bottom:20px;
+}
+
+.math2 form fieldset .buttan button {
+    display:block;
+    width:20%;
+    box-sizing:border-box;
+    height:40px;
+    margin: auto;
+}
+
+.math2 form fieldset p {
+    display: flex;
+    margin:0;
+}
+
+.math2 form fieldset p span {
+    margin: auto;
+    font-size:1.2rem;
+}
+
 .API {
     display: flex;
     flex-direction: column;

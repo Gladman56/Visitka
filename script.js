@@ -54,3 +54,58 @@ div.addEventListener("click", (event) => {
     event.preventDefault()
     calculus("/");
 });
+
+const sin = document.getElementById("butsin");
+const cos = document.getElementById("butcos");
+const tg = document.getElementById("buttg");
+const ctg = document.getElementById("butctg");
+
+let number =  document.getElementById("number");
+
+const result1 = document.getElementById("result2");
+
+let res1 = 0
+
+function trigono(mark) {
+
+    let num = parseFloat(number.value) || 0;
+
+    num = num * (Math.PI/180);
+
+    switch(mark) {
+case "sin":
+    res1 = Math.sin(num);
+    break;
+case "cos":
+    res1 = Math.cos(num);
+     break;
+case "tg":
+    res1 = (num % Math.PI) === (Math.PI/2) ? "error" : Math.tan(num);
+    break;
+case "ctg":
+    res1 = (num % Math.PI) === 0 ? "error" : 1/Math.tan(num);
+    break;
+
+}
+result1.textContent = res1;
+}
+
+sin.addEventListener("click", (event) => {
+    event.preventDefault()
+    trigono("sin");
+});
+
+cos.addEventListener("click", (event) => {
+    event.preventDefault()
+    trigono("cos");
+});
+
+tg.addEventListener("click", (event) => {
+    event.preventDefault()
+    trigono("tg");
+});
+
+ctg.addEventListener("click", (event) => {
+    event.preventDefault()
+    trigono("ctg");
+});
